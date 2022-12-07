@@ -18,6 +18,11 @@ namespace Exe4_141
             top = -1;
             max = size;
         }
+
+        public void Push()
+        {
+
+        }
     }
     internal class Program
     {
