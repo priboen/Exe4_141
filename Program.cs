@@ -32,6 +32,11 @@ namespace Exe4_141
                 adri[++top] = Console.ReadLine();
             }
         }
+
+        public void Pop()
+        {
+
+        }
     }
     internal class Program
     {
