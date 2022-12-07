@@ -47,6 +47,11 @@ namespace Exe4_141
                 return;
             }
         }
+
+        public void Display()
+        {
+
+        }
     }
     internal class Program
     {
