@@ -65,7 +65,7 @@ namespace Exe4_141
         }
         static void Main(string[] args)
         {
-
+            Stack st = new Stack(39);
         }
     }
 }
