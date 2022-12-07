@@ -28,7 +28,7 @@ namespace Exe4_141
             }
             else
             {
-                Console.WriteLine("Masukan element : ");
+                Console.Write("Masukan element : ");
                 adri[++top] = Console.ReadLine();
             }
         }
@@ -42,7 +42,7 @@ namespace Exe4_141
             }
             else
             {
-                Console.WriteLine("Masukan element : ");
+                Console.Write("Masukan element : ");
                 top--;
                 return;
             }
