@@ -9,8 +9,8 @@ namespace Exe4_141
     class Stack
     {
         private string[] adri;
-        private decimal top;
-        private decimal max;
+        private int top;
+        private int max;
 
         public Stack(int size)
         {
@@ -21,7 +21,16 @@ namespace Exe4_141
 
         public void Push()
         {
-
+            if (top == max - 1)
+            {
+                Console.WriteLine("Stack Kosong");
+                return;
+            }
+            else
+            {
+                Console.WriteLine("Masukan element : ");
+                adri[++top] = Console.ReadLine();
+            }
         }
     }
     internal class Program
