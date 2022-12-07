@@ -46,6 +46,8 @@ namespace Exe4_141
                 top--;
                 return;
             }
+
+    
         }
 
         public void Display()
@@ -60,8 +62,11 @@ namespace Exe4_141
                 Console.WriteLine("Element yang tersedia : ");
                 for (int i = 0; i < adri.Length; i++)
                 {
-                    Console.WriteLine(adri[i]);
+                    Console.Write("\n" + adri[i]);
                 }
+                Console.WriteLine("\nTekan 'Enter' untuk melanjutkan Program");
+                Console.ReadKey();
+                
             }
         }
         static void Main(string[] args)
@@ -69,6 +74,7 @@ namespace Exe4_141
             Stack st = new Stack(39);
             while (true)
             {
+                
                 Console.WriteLine();
                 Console.WriteLine("***Stack Menu***");
                 Console.WriteLine("1. Push");
