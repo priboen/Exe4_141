@@ -8,7 +8,9 @@ namespace Exe4_141
 {
     class Stack
     {
-
+        private string[] adri;
+        private decimal top;
+        private decimal max;
     }
     internal class Program
     {
