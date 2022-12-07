@@ -35,7 +35,17 @@ namespace Exe4_141
 
         public void Pop()
         {
-
+            if (top == -1)
+            {
+                Console.WriteLine("Stack Kosong");
+                return;
+            }
+            else
+            {
+                Console.WriteLine("Masukan element : ");
+                top--;
+                return;
+            }
         }
     }
     internal class Program
