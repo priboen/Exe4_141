@@ -42,7 +42,7 @@ namespace Exe4_141
             }
             else
             {
-                Console.Write("Masukan element : ");
+                Console.Write("Element yang di Popped : " + adri[top] );
                 top--;
                 return;
             }
@@ -57,6 +57,7 @@ namespace Exe4_141
             }
             else
             {
+                Console.WriteLine("Element yang tersedia : ");
                 for (int i = 0; i < adri.Length; i++)
                 {
                     Console.WriteLine(adri[i]);
@@ -68,7 +69,38 @@ namespace Exe4_141
             Stack st = new Stack(39);
             while (true)
             {
-                
+                Console.WriteLine();
+                Console.WriteLine("***Stack Menu***");
+                Console.WriteLine("1. Push");
+                Console.WriteLine("2. Pop");
+                Console.WriteLine("3. Display");
+                Console.WriteLine("4. Exit");
+                Console.Write("\n Enter your choice : ");
+                string input = Console.ReadLine();
+                char ch = Convert.ToChar(input == "" ? "o" : input);
+
+                switch (ch)
+                {
+                    case '1':
+                        Console.Clear();
+                        st.Push();
+                        break;
+                    case '2':
+                        Console.Clear();
+                        st.Pop();
+                        break;
+                    case '3':
+                        Console.Clear();
+                        st.Display();
+                        break;
+                    case '4':
+                        Console.Clear();
+                        return;
+                    default:
+                        Console.Clear();
+                        Console.WriteLine("Masukan Angka yang terdapat pada menu!");
+                        break;
+                }
             }
         }
     }
