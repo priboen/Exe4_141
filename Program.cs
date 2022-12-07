@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Exe4_141
 {
+    class Stack
+    {
+
+    }
     internal class Program
     {
         static void Main(string[] args)
