@@ -38,15 +38,18 @@ namespace Exe4_141
             if (top == -1)
             {
                 Console.WriteLine("Stack Kosong");
+                Console.WriteLine("\nTekan 'Enter' untuk melanjutkan Program");
+                Console.ReadKey();
                 return;
             }
             else
             {
                 Console.Write("Element yang di Popped : " + adri[top] );
                 top--;
+                Console.WriteLine("\nTekan 'Enter' untuk melanjutkan Program");
+                Console.ReadKey();
                 return;
             }
-
     
         }
 
@@ -60,7 +63,7 @@ namespace Exe4_141
             else
             {
                 Console.WriteLine("Element yang tersedia : ");
-                for (int i = 0; i < adri.Length; i++)
+                for (int i = 0; i <= top; i++)
                 {
                     Console.Write("\n" + adri[i]);
                 }
@@ -74,7 +77,7 @@ namespace Exe4_141
             Stack st = new Stack(39);
             while (true)
             {
-                
+                Console.Clear();
                 Console.WriteLine();
                 Console.WriteLine("***Stack Menu***");
                 Console.WriteLine("1. Push");
