@@ -50,7 +50,18 @@ namespace Exe4_141
 
         public void Display()
         {
-
+            if (top == -1)
+            {
+                Console.WriteLine("Stack Kosong");
+                return;
+            }
+            else
+            {
+                for (int i = 0; i < adri.Length; i++)
+                {
+                    Console.WriteLine(adri[i]);
+                }
+            }
         }
     }
     internal class Program
